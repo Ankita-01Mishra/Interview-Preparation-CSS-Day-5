@@ -1,0 +1,77 @@
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: coral;
+    border: 2px solid red;
+    transition: width 2s, height 5s;
+}
+.box:hover{
+    width: 300px;
+    height: 300px;
+}
+.box1{
+    height: 150px;
+    width: 150px;
+    background-color: skyblue;
+    border: 2px solid blue;
+}
+.box1:hover{
+    transform: rotate(45deg);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-gap: 5px;
+    background-color: palevioletred;
+}
+.item{
+    background-color:rgb(164, 81, 242) ;
+    height: 70px;
+    text-align: center;
+    font-size: 19px;
+}
+#item7{
+    grid-column: 3/5;
+}
+
+
+div p{
+    text-align: center;
+    font-size: 19px;
+    background-color: green;
+    color: yellow;
+}
+div > p{
+    background-color: cadetblue;
+}
+div + p{
+   background-color: brown;
+   font-size: 20px;
+   text-align: center;
+   color: aliceblue;
+}
+div ~ p {
+    font-size: 20px;
+    background-color: yellow;
+  }
+
+.btn{
+    /* height: 50px; */
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+   background-color: rgb(45, 255, 30);
+} 
+.btn:hover{
+    background-color: palevioletred;
+    color: black;
+} 
+.btn:visited{
+    background-color: blanchedalmond;
+    color: blue;
+}
+.btn:active{
+    background-color: aliceblue;
+    color: chocolate;
+}
